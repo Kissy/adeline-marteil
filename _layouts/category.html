@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="row">
+    <div class="span12">
+        <h1>{{page.title | replace:'-',' '}}</h1>
+        <div class="categories">
+            <ul class="thumbnails">
+                {% if page.title == 'Work' %}
+                    {% assign posts = site.posts %}
+                {% elsif page.title == 'Recent Work' %}
+                    {% assign posts = site.posts %}
+                    {% assign posts_limit = 4 %}
+                {% else %}
+                    {% assign posts = site.categories[page.title]  %}
+                {% endif %}
+                {{post_limit}}
+                {% for post in posts limit:posts_limit %}
+                    <li class="span3">
+                        <a href="{% if post.external %}{{post.external}}{% else %}{{post.url | downcase}}{% endif %}" class="thumbnail">
+                            <img src="/img{{post.id | downcase}}/{% if post.thumbnail %}{{post.thumbnail}}{% else %}{{post.images | first}}{% endif %}" class="img-rounded">
+                            <div class="caption">
+                                <h4>{{post.title}}</h4>
+                            </div>
+                        </a>
+                    </li>
+                    {% capture separator %}</ul><ul class="thumbnails">{% endcapture %}
+                    {% cycle '', '', '', separator %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

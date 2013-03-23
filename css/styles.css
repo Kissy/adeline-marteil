@@ -1,0 +1,131 @@
+body {
+    background-color: #f1f1f1;
+}
+h1 {
+    color: #5bc9c8;
+}
+.content-body {
+    margin: 5px;
+}
+.logo  .span12 {
+    margin-top: 34px;
+    margin-bottom: 24px;
+}
+.menu .span12 {
+    height: 52px;
+    margin-bottom: 28px;
+    border: 1px solid #979798;
+    border-left: 0;
+    border-right: 0;
+    position: relative;
+}
+.menu .centered-menu {
+    float: left;
+    list-style: none;
+    position: relative;
+    margin: 0;
+    left: 50%;
+}
+.menu .centered-menu li {
+    float: left;
+    right: 50%;
+    position:relative;
+    padding: 16px 16px;
+}
+.menu .centered-menu a {
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.menu .dropdown-menu {
+    top: 40px;
+    left: 10px;
+    padding: 0;
+    background: #dbd9da;
+    border-color: #f3f3f3;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.menu .dropdown-menu li {
+    right: 0;
+    float: none;
+    padding: 0;
+}
+.menu .dropdown-menu a {
+    text-transform: none;
+    color: #464747;
+    border-top: 1px solid #f3f3f3;
+    padding: 10px 10px 10px 20px;
+    text-transform: capitalize;
+}
+.menu .dropdown-menu li:first-child a {
+    border-top: none;
+}
+.menu .dropdown-menu a:hover {
+    background: none;
+    color: #3b6868;
+}
+
+.menu input {
+    height: 12px;
+    font-style: italic;
+    width: 145px;
+    color: #505050;
+    background-color: #eaeae0;
+    border: 1px solid #a7a9ac;
+    margin: 15px 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+}
+.slider .nivo-directionNav {
+    display: none;
+}
+.slider .nivo-controlNav {
+    text-align: right;
+}
+.slider .nivo-controlNav a {
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 9999px;
+    width: 12px;
+    height: 11px;
+    margin: 0 8px;
+    background: url("/img/slider-nav.png") no-repeat; 
+}
+.slider .nivo-controlNav a.active {
+    background-image: url("/img/slider-nav-active.png"); 
+}
+.homeLinks img {
+    width: 100%;
+}
+.homeLinks .caption {
+    text-align: center;
+    text-transform: uppercase;
+}
+.categories .caption {
+    text-align: center;
+    text-transform: uppercase;
+}
+.categories .caption h4 {
+    min-height: 40px;
+    font-weight: normal !important;
+}
+.categories .thumbnail > img {
+    height: 210px;
+}
+footer {
+    margin: 30px 0 0 0;
+    border: 0 solid #aae0df;
+    border-top: 16px;
+    background-color: #a6afb1;
+}
+footer .container {
+    padding: 18px 0 24px 0;
+}
+footer span {
+    float: right;
+}

@@ -1,0 +1,6 @@
+---
+layout: post
+category : Photography
+images : [A-Christmas-in-Paris.jpg]
+---
+

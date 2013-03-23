@@ -1,0 +1,9 @@
+auto: true
+markdown: rdiscount
+permalink: /work/:categories/:title/
+exclude: [".gitignore", "README.md"]
+
+## Github overrides
+safe: true
+lsi: false
+pygments: true
