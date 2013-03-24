@@ -6,11 +6,12 @@ $('.dropdown-menu-button').on('mouseenter', function() {
     $(this).children('.dropdown-menu').stop(true, true).slideUp(100);
 });
 $(document).ready(function() {
-    $('#home-slider').nivoSlider({
-        directionNav: false
+    $('#home-slider').pikachoose({
+        text: {previous: "", next: ""},
+        showCaption:false
     });
-    $('#post-slider').nivoSlider({
-        directionNav: true,
-        controlNavThumbs: true
+    $('#post-slider').pikachoose({
+        text: {previous: "", next: ""},
+        showCaption:false
     });
 });

@@ -1,0 +1,63 @@
+.homeSlider li {
+    list-style-type: none;
+}
+
+/* Style the thumbnails */
+.pika-thumbs {padding: 20px 0; margin: 0; height: 100px;}
+	.pika-thumbs li{ float: left; list-style-type: none; margin-right: 10px;}
+	.pika-thumbs li .clip {position:relative;height:100%;text-align: center; vertical-align: middle; overflow: hidden; cursor: pointer;}
+	.pika-thumbs li .clip img {vertical-align: top;width: 100px; height: 100px;}
+	
+/* The stage is the wrapper. The image fills 100% the height of the stage */
+.pika-stage, .pika-textnav {width: 100%;}
+.pika-stage {position: relative; text-align:center;}
+.pika-stage img{height:100%;}
+.pika-stage .caption {position: absolute; background: #000; background: rgba(0,0,0,0.75);  border: 1px solid #141414; font-size: 11px; 
+			color: #fafafa; padding: 10px; text-align: right; bottom: 50px; right: 10px;}
+	.pika-stage .caption p {padding: 0; margin: 0; line-height: 14px;}
+
+/* Ths play, pause, prev and next buttons */
+.pika-imgnav .pause,
+.pika-imgnav .play {display: none;}
+.pika-imgnav {opacity: 1 !important;}
+.pika-imgnav a {position: absolute; text-indent: -5000px; display: block;z-index:3;}
+	.pika-imgnav a.previous {background: url(/img/prev-button.png) no-repeat left 45%; height: 41px; width: 40px; top: 50%; left: -20px; margin-top: -20px; cursor:pointer;}
+	.pika-imgnav a.next {background: url(/img/next-button.png) no-repeat right 45%; height: 41px; width: 40px; top: 50%; right: -20px; margin-top: -20px; cursor:pointer;}
+
+/* The previous and next textual buttons */
+.pika-textnav {display: none; opacity: 0;}
+
+/*for the tool tips*/
+.pika-tooltip{font-size:12px;position:absolute;color:white;padding:3px; background-color: rgba(0,0,0,0.7);border:3px solid black;}
+.pika-counter{display: none; opacity: 0;}
+
+/* If using user thumbnails there's a pause well the new large image loads. This is the loader for that */		
+.pika-loader{ background:url(/img/loading.gif) 4px 4px no-repeat #a6afb1; width:32px; height: 32px; padding: 4px; position:absolute; top:15px; right:15px; 
+                    -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+
+/* Home Slider */
+.homeSlider .pika-imgnav {
+    display: none;
+    opacity: 0 !important;
+}
+.homeSlider .pika-thumbs {
+    float: right;
+    height: 31px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.homeSlider .pika-thumbs li {
+    margin: 0;
+}
+.homeSlider .pika-thumbs li .clip {
+    width: 12px;
+    height: 11px;
+    margin: 10px;
+    background: url("/img/slider-nav.png") no-repeat; 
+}
+.homeSlider .pika-thumbs li.active .clip {
+    background-image: url("/img/slider-nav-active.png"); 
+}
+.homeSlider .pika-thumbs li .clip img {
+    height: 11px;
+}

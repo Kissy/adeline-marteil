@@ -11,11 +11,11 @@ layout: default
         {% if images_size == 1 %}
             <img src="/img{{page.id | downcase}}/{{page.images | first}}">
         {% elsif images_size > 1 %}
-            <div id="post-slider" class="nivoSlider">
+            <ul id="post-slider">
                 {% for image in page.images %}
-                    <img src="/img{{page.id | downcase}}/{{image}}"  data-thumb="/img{{page.id | downcase}}/thumbnails/{{image}}">
+                    <li><img ref="/img{{page.id | downcase}}/{{image}}"  src="/img{{page.id | downcase}}/thumbnails/{{image}}"></li>
                 {% endfor %}
-            </div>
+            </ul>
         {% endif %}
         
         {% if page.video %}

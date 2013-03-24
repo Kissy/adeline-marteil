@@ -81,24 +81,6 @@ h1 {
     position: absolute;
     right: 0;
 }
-.slider .nivo-directionNav {
-    display: none;
-}
-.slider .nivo-controlNav {
-    text-align: right;
-}
-.slider .nivo-controlNav a {
-    display: inline-block;
-    overflow: hidden;
-    text-indent: 9999px;
-    width: 12px;
-    height: 11px;
-    margin: 0 8px;
-    background: url("/img/slider-nav.png") no-repeat; 
-}
-.slider .nivo-controlNav a.active {
-    background-image: url("/img/slider-nav-active.png"); 
-}
 .homeLinks img {
     width: 100%;
 }
@@ -117,10 +99,11 @@ h1 {
 .categories .thumbnail > img {
     height: 210px;
 }
+.thumbnails {
+    margin-bottom: 0;
+}
 footer {
-    margin: 30px 0 0 0;
-    border: 0 solid #aae0df;
-    border-top: 16px;
+    border-top: 16px solid #aae0df;
     background-color: #a6afb1;
 }
 footer .container {

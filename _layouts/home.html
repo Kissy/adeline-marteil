@@ -2,12 +2,12 @@
 layout: default
 ---
 <div class="row slider">
-    <div class="span12">
-        <div id="home-slider" class="nivoSlider">
+    <div class="span12 homeSlider">
+        <ul id="home-slider">
             {% for image in page.images %}
-            <img src="/img/home/slides/{{image}}" alt="">
+                <li><img src="/img/transparent.gif" ref="/img/home/slides/{{image}}" alt=""></li>
             {% endfor %}
-        </div>
+        </ul>
     </div>
 </div>
 <div class="row homeLinks">
