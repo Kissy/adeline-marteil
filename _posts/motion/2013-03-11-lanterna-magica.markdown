@@ -1,6 +1,6 @@
 ---
 layout: post
-category: Motion
+category: motion
 thumbnail: thumbnail.jpg
 external: http://master.adeline-marteil.fr/
 ---

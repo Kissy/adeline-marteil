@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Exhibition
+category : exhibition
 video: 37311332
 ---
 An exhibition at Bower Ashton Faculty of Creative Arts in Bristol entitled 'The Library of Individuals' explores the body of work from MA Graphic Arts Students. 

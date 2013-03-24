@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Visual-Identity
+category : visual-identity
 title: Peace One Day &ndash; D&AD Brief
 images: [posterPOD1.png, postersPOD0.jpg, postersPOD02.jpg]
 ---

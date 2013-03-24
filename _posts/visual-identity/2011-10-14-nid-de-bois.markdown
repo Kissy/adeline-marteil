@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Visual-Identity
+category : visual-identity
 title: Nid de Bois
 images: [NDB01.jpg, NDB02.jpg, NDB03.jpg, NDB04.jpg]
 ---

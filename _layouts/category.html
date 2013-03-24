@@ -12,12 +12,13 @@ layout: default
                     {% assign posts = site.posts %}
                     {% assign posts_limit = 4 %}
                 {% else %}
-                    {% assign posts = site.categories[page.title]  %}
+                    {% assign category_name = page.title | downcase %}
+                    {% assign posts = site.categories[category_name]  %}
                 {% endif %}
                 {{post_limit}}
                 {% for post in posts limit:posts_limit %}
                     <li class="span3">
-                        <a href="{% if post.external %}{{post.external}}{% else %}{{post.url | downcase}}{% endif %}" class="thumbnail">
+                        <a href="{% if post.external %}{{post.external}}{% else %}{{post.url}}{% endif %}" class="thumbnail">
                             <img src="/img{{post.id | downcase}}/{% if post.thumbnail %}{{post.thumbnail}}{% else %}{{post.images | first}}{% endif %}" class="img-rounded">
                             <div class="caption">
                                 <h4>{{post.title}}</h4>

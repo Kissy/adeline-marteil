@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Visual-Identity
+category : visual-identity
 title: Koala Project
 images: [affichage_sauvage.jpg, affichage_sauvage2.jpg, etiquettes.jpg, koala.jpg, koala2.jpg, koala3.jpg, koala4.jpg, koala5.jpg, label_stickers.jpg, supermarket.jpg, supermarket2.jpg]
 ---

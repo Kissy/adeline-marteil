@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Print
+category : print
 title: Schaeffer's Centenary
 images: [poster01.jpg]
 ---

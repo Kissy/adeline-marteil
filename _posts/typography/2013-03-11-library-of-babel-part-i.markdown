@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Typography
+category : typography
 title: Library of Babel Part&nbsp;I
 thumbnail: thumbnail.jpg
 images: [poster1.jpg, poster2.jpg, specimen1.jpg, specimen2.jpg]

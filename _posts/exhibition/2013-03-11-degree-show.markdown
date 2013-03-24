@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Exhibition
+category : exhibition
 tags : []
 ---
 A venir en juin...

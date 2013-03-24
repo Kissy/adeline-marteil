@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Typography
+category : typography
 images: [poster01.jpg]
 ---
 Typophage is a brand new library specialized in typography which need a visual identity including poster, stationary and website. 

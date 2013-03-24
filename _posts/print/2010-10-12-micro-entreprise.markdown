@@ -1,6 +1,6 @@
 ---
 layout: post
-category : Print
+category : print
 images: [A.Marteil.Playmobil.jpg]
 ---
 Here is a short notice about how to create a micro-buisiness (in France), 
