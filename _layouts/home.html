@@ -4,44 +4,27 @@ layout: default
 <div class="row slider">
     <div class="span12">
         <div id="home-slider" class="nivoSlider">
-            <img src="/img/home/slides/slide1.jpg" alt="">
-            <img src="/img/home/slides/slide2.jpg" alt="">
-            <img src="/img/home/slides/slide3.jpg" alt="">
-            <img src="/img/home/slides/slide4.jpg" alt="">
+            {% for image in page.images %}
+            <img src="/img/home/slides/{{image}}" alt="">
+            {% endfor %}
         </div>
     </div>
 </div>
 <div class="row homeLinks">
-    <div class="span3">
-        <a href="/work/recent/" class="thumbnail">
-            <img src="/img/home/links/link1.jpg" class="img-rounded" />
-            <div class="caption">
-                <h4>Recent Work</h4>
-            </div>
-        </a>
-    </div>
-    <div class="span3">
-        <a href="/work/magic-lanterna/" class="thumbnail">
-            <img src="/img/home/links/link2.jpg" class="img-rounded" />
-            <div class="caption">
-                <h4>Magic Lanterna</h4>
-            </div>
-        </a>
-    </div>
-    <div class="span3">
-        <a href="http://blog.adeline-marteil.fr/" target="_blank" class="thumbnail">
-            <img src="/img/home/links/link3.jpg" class="img-rounded" />
-            <div class="caption">
-                <h4>Journal</h4>
-            </div>
-        </a>
-    </div>
-    <div class="span3">
-        <a href="/contact/" class="thumbnail">
-            <img src="/img/home/links/link4.jpg" class="img-rounded" />
-            <div class="caption">
-                <h4>Contact Me</h4>
-            </div>
-        </a>
+    <div class="span12">
+        <ul class="thumbnails">
+        {% for link in page.links %}
+            <li class="span3">
+                <a href="{{link.url}}" class="thumbnail">
+                    <img src="/img/home/links/{{link.image}}" class="img-rounded" />
+                    <div class="caption">
+                        <h4>{{link.title}}</h4>
+                    </div>
+                </a>
+            </li>
+            {% capture separator %}</ul><ul class="thumbnails">{% endcapture %}
+            {% cycle '', '', '', separator %}
+        {% endfor %}
+        </ul>
     </div>
 </div>
