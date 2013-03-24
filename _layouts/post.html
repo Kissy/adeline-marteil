@@ -9,7 +9,9 @@ layout: default
     <div class="span9 content">
         {% assign images_size = page.images | size %}
         {% if images_size == 1 %}
-            <img src="/img{{page.id | downcase}}/{{page.images | first}}">
+            <div class="well">
+                <img src="/img{{page.id | downcase}}/{{page.images | first}}">
+            </div>
         {% elsif images_size > 1 %}
             <ul id="post-slider">
                 {% for image in page.images %}
