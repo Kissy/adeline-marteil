@@ -7,9 +7,10 @@ layout: default
         {{content}}
     </div>
     <div class="span9 content">
-        {% if page.images | size == 1 %}
+        {% assign images_size = page.images | size %}
+        {% if images_size == 1 %}
             <img src="/img{{page.id | downcase}}/{{page.images | first}}">
-        {% elsif page.images | size > 1 %}
+        {% elsif images_size > 1 %}
             <div id="post-slider" class="nivoSlider">
                 {% for image in page.images %}
                     <img src="/img{{page.id | downcase}}/{{image}}"  data-thumb="/img{{page.id | downcase}}/thumbnails/{{image}}">
