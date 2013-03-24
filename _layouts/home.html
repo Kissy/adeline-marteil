@@ -12,8 +12,8 @@ layout: default
 </div>
 <div class="row homeLinks">
     <div class="span12">
-        <ul class="thumbnails">
         {% for link in page.links %}
+            {% cycle '<ul class="thumbnails">', '', '', '' %}
             <li class="span3">
                 <a href="{{link.url}}" class="thumbnail">
                     <img src="/img/home/links/{{link.image}}" class="img-rounded" />
@@ -22,8 +22,7 @@ layout: default
                     </div>
                 </a>
             </li>
-            {% capture separator %}</ul><ul class="thumbnails">{% endcapture %}
-            {% cycle '', '', '', separator %}
+            {% unless forloop.last %}{% cycle '', '', '', '</ul>' %}{% endunless %}
         {% endfor %}
         </ul>
     </div>
