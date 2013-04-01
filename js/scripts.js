@@ -14,7 +14,22 @@ $(document).on('submit', '#contact_form', function() {
             });
     $('#contact_form').find('input:not(hidden), textarea').val('');
 });
+$(document).on('keyup', '#search_input', runSearch);
+
+var searchData, filteredData;
+function runSearch() {
+    var search = $(this).val().toLowerCase();
+    var results = filteredData.find('li').filter(function(index) {
+        return $(this).attr('data-id').toLowerCase().indexOf(search) != -1;
+    });
+    searchData.quicksand(results, {
+        duration: 250
+    });
+}
+
 $(document).ready(function() {
+    searchData = $('#search_data');
+    filteredData = searchData.clone();
     $('#home-slider').pikachoose({
         text: {previous: "", next: ""},
         showCaption:false

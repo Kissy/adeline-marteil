@@ -7,6 +7,7 @@ layout: default
         <div class="categories">
                 {% if page.title == 'Work' %}
                     {% assign posts = site.posts %}
+                    {% assign list_id = 'search_data' %}
                 {% elsif page.title == 'Recent Work' %}
                     {% assign posts = site.posts %}
                     {% assign posts_limit = 4 %}
@@ -14,21 +15,20 @@ layout: default
                     {% assign category_name = page.title | downcase %}
                     {% assign posts = site.categories[category_name]  %}
                 {% endif %}
-                {{post_limit}}
-                {% for post in posts limit:posts_limit %}
-                    {% if page.title != 'Work' or post.duplicate != true %}
-                        {% cycle '<ul class="thumbnails">', '', '', '' %}
-                        <li class="span3">
-                            <a href="{% if post.external %}{{post.external}}{% else %}{{post.url}}{% endif %}" class="thumbnail">
-                                <img src="/img{{post.id | downcase}}/{% if post.thumbnail %}{{post.thumbnail}}{% else %}{{post.images | first}}{% endif %}" class="img-rounded">
-                                <div class="caption">
-                                    <h4>{{post.title}}</h4>
-                                </div>
-                            </a>
-                        </li>
-                        {% unless forloop.last %}{% cycle '', '', '', '</ul>' %}{% endunless %}
-                    {% endif %}
-                {% endfor %}
+                <ul class="thumbnails" id="{{list_id}}">
+                    {% for post in posts limit:posts_limit %}
+                        {% if page.title != 'Work' or post.duplicate != true %}
+                            <li class="span3" data-id="{{post.title | downcase}}">
+                                <a href="{% if post.external %}{{post.external}}{% else %}{{post.url}}{% endif %}" class="thumbnail">
+                                    <img src="/img{{post.id | downcase}}/{% if post.thumbnail %}{{post.thumbnail}}{% else %}{{post.images | first}}{% endif %}" class="img-rounded">
+                                    <div class="caption">
+                                        <h4>{{post.title}}</h4>
+                                    </div>
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
             </ul>
         </div>
     </div>
