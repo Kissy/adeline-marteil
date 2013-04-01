@@ -3,7 +3,8 @@ layout: post
 category : visual-identity
 title: Peace One Day &ndash; D&AD Brief
 thumbnail: thumbnail.jpg
-images: [posterPOD1.png, postersPOD0.jpg, postersPOD02.jpg]
+video: 38232537
+images: [postersPOD1.jpg, postersPOD0.jpg, postersPOD02.jpg]
 ---
 Entry to the D&AD Competition 2012 about the organization Peace One Day. Brief sponsored by Interbrand.
 
