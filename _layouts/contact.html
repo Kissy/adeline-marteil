@@ -8,31 +8,37 @@ layout: default
     <div class="span9">
         <div class="well">
             {{content}}
-            <form class="form-horizontal">
+            <div id="contact_form_alerts"></div>
+            <form class="form-horizontal" target="google_contact_form" method="POST" id="contact_form"
+                action="https://docs.google.com/spreadsheet/formResponse?formkey=dHY5UG9GcnVzQnBGLXM3bTh6Yk9IbHc6MQ&ifq">
+                <input type="hidden" name="pageNumber" value="0">
+                <input type="hidden" name="backupCache" value="">
                 <div class="control-group">
                     <label class="control-label" for="inputName">Name</label>
                     <div class="controls">
-                        <input type="text" id="inputName" class="input-xlarge">
+                        <input type="text" name="entry.3.single" id="inputName" class="input-xlarge">
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="inputEmail">Email</label>
                     <div class="controls">
-                        <input type="password" id="inputEmail" class="input-xlarge">
+                        <input type="text" name="entry.4.single" id="inputEmail" class="input-xlarge">
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="inputMessage">Message</label>
                     <div class="controls">
-                        <textarea class="input-xlarge" rows="6"></textarea>
+                        <textarea name="entry.6.single" class="input-xlarge" rows="6"></textarea>
                     </div>
                 </div>
                 <div class="control-group control-group-submit">
                     <div class="controls">
-                        <button type="submit" class="btn">Send</button>
+                        <button type="submit" name="submit" class="btn">Send</button>
                     </div>
                 </div>
             </form>
+            <iframe name="google_contact_form" width="0" height="0" frameborder="0" marginheight="0" marginwidth="0"
+                src="https://docs.google.com/spreadsheet/embeddedform?formkey=dHY5UG9GcnVzQnBGLXM3bTh6Yk9IbHc6MQ"></iframe>
         </div>
     </div>
 </div>
