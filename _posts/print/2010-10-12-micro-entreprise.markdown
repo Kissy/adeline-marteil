@@ -1,6 +1,7 @@
 ---
 layout: post
-category : print
+category: print
+thumbnail: thumbnail.jpg
 images: [A.Marteil.Playmobil.jpg]
 ---
 Here is a short notice about how to create a micro-buisiness (in France), 

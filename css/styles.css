@@ -102,6 +102,9 @@ h1 {
 .thumbnails {
     margin-bottom: 0;
 }
+.post {
+    margin-bottom: 20px;
+}
 footer {
     border-top: 16px solid #aae0df;
     background-color: #a6afb1;

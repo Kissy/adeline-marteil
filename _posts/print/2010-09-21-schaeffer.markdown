@@ -1,7 +1,8 @@
 ---
 layout: post
-category : print
+category: print
 title: Schaeffer's Centenary
+thumbnail: thumbnail.jpg
 images: [poster01.jpg]
 ---
 The Cité de la Musique of Paris organises an exhibition around the work of Pierre Schaeffer and ask for a poster.

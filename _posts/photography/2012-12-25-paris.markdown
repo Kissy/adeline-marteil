@@ -1,6 +1,6 @@
 ---
 layout: post
-category : photography
-images : [A-Christmas-in-Paris.jpg]
+category: photography
+thumbnails: thumbnail.jpg
+images: [A-Christmas-in-Paris1.jpg, A-Christmas-in-Paris2.jpg, A-Christmas-in-Paris3.jpg, A-Christmas-in-Paris4.jpg]
 ---
-
