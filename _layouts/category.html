@@ -16,16 +16,18 @@ layout: default
                 {% endif %}
                 {{post_limit}}
                 {% for post in posts limit:posts_limit %}
-                    {% cycle '<ul class="thumbnails">', '', '', '' %}
-                    <li class="span3">
-                        <a href="{% if post.external %}{{post.external}}{% else %}{{post.url}}{% endif %}" class="thumbnail">
-                            <img src="/img{{post.id | downcase}}/{% if post.thumbnail %}{{post.thumbnail}}{% else %}{{post.images | first}}{% endif %}" class="img-rounded">
-                            <div class="caption">
-                                <h4>{{post.title}}</h4>
-                            </div>
-                        </a>
-                    </li>
-                    {% unless forloop.last %}{% cycle '', '', '', '</ul>' %}{% endunless %}
+                    {% if page.title != 'Work' or post.duplicate != true %}
+                        {% cycle '<ul class="thumbnails">', '', '', '' %}
+                        <li class="span3">
+                            <a href="{% if post.external %}{{post.external}}{% else %}{{post.url}}{% endif %}" class="thumbnail">
+                                <img src="/img{{post.id | downcase}}/{% if post.thumbnail %}{{post.thumbnail}}{% else %}{{post.images | first}}{% endif %}" class="img-rounded">
+                                <div class="caption">
+                                    <h4>{{post.title}}</h4>
+                                </div>
+                            </a>
+                        </li>
+                        {% unless forloop.last %}{% cycle '', '', '', '</ul>' %}{% endunless %}
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>
