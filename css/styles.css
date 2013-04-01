@@ -91,7 +91,8 @@
 .thumbnails {
     margin-bottom: 0;
 }
-.post {
+.title,
+.video {
     margin-bottom: 20px;
 }
 footer {
