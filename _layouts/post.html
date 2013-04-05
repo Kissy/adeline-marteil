@@ -7,13 +7,6 @@ layout: default
         {{content}}
     </div>
     <div class="span9 content">
-        {% if page.video %}
-            <div class="video">
-                <iframe src="http://player.vimeo.com/video/{{page.video}}" width="700" height="390" 
-                frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-            </div>
-        {% endif %}
-        
         {% assign images_size = page.images | size %}
         {% if images_size == 1 %}
             <div class="well">
@@ -27,8 +20,21 @@ layout: default
             </ul>
         {% endif %}
         
-        <!--<object data="/img/work/typography/typophage/05-didone.swf" width="100%" type="application/x-shockwave-flash">
-            <embed src="/img/work/typography/typophage/05-didone.swf" type="application/x-shockwave-flash" />
-        </object>-->
+        {% if page.animations %}
+            {% for animation in page.animations %}
+                <div class="well">
+                    <object data="/img{{page.id | downcase}}/{{animation}}" width="100%" height="400" type="application/x-shockwave-flash">
+                        <embed src="/img{{page.id | downcase}}/{{animation}}" type="application/x-shockwave-flash" />
+                    </object>
+                </div>
+            {% endfor %}
+        {% endif %}
+        
+        {% if page.video %}
+            <div class="well">
+                <iframe src="http://player.vimeo.com/video/{{page.video}}" width="660" height="370" 
+                frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+        {% endif %}
     </div>
 </div>
