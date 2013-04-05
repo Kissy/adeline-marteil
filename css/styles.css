@@ -97,6 +97,10 @@ body {
 .title {
     margin-bottom: 20px;
 }
+#no_results {
+    display: none;
+    text-align: center;
+}
 footer {
     border-top: 16px solid #aae0df;
     background-color: #a6afb1;
