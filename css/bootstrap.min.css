@@ -765,7 +765,8 @@ h3 {
 
 h1 {
   color: #5bc9c8;
-  font-size: 38.5px;
+  /*font-size: 38.5px;*/
+  font-size: 31.5px;
 }
 
 h2 {
