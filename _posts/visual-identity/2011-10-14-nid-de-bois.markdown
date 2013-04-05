@@ -3,7 +3,7 @@ layout: post
 category : visual-identity
 title: Nid de Bois
 thumbnail: thumbnail.jpg
-images: [NDB01.jpg, NDB02.jpg, NDB03.jpg, NDB04.jpg]
+images: [01-NDB05.png, 02-NDB04.png, 03-NDB06.png, 04-NDB01.png, 05-NDB03.png, 06-NDB02.png]
 ---
 Brand identity to a new sustainable hotel chain: poster, stationary, clothing...
 
