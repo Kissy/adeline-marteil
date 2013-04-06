@@ -12,18 +12,17 @@ layout: default
 </div>
 <div class="row homeLinks">
     <div class="span12">
-        {% for link in page.links %}
-            {% cycle '<ul class="thumbnails">', '', '', '' %}
-            <li class="span3">
-                <a href="{{link.url}}" class="thumbnail">
-                    <img src="/img/home/links/{{link.image}}" class="img-rounded" />
-                    <div class="caption">
-                        <h4>{{link.title}}</h4>
-                    </div>
-                </a>
-            </li>
-            {% unless forloop.last %}{% cycle '', '', '', '</ul>' %}{% endunless %}
-        {% endfor %}
+        <ul class="thumbnails">
+            {% for link in page.links %}
+                <li class="span3">
+                    <a href="{{link.url}}" class="thumbnail">
+                        <img src="/img/home/links/{{link.image}}" class="img-rounded" />
+                        <div class="caption">
+                            <h4>{{link.title}}</h4>
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
         </ul>
     </div>
 </div>
