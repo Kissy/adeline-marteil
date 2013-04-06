@@ -3225,7 +3225,7 @@ button.close {
 .btn[disabled] {
   color: #333333;
   background-color: #e6e6e6;
-  *background-color: #d9d9d9;
+  *background-color: #e6e6e6;
 }
 
 .btn:active,
@@ -5514,6 +5514,7 @@ input[type="submit"].btn.btn-mini {
 
 .thumbnails {
   margin-left: -20px;
+  margin-bottom: 0;
   list-style: none;
   *zoom: 1;
 }
@@ -5535,8 +5536,8 @@ input[type="submit"].btn.btn-mini {
 
 .thumbnails > li {
   float: left;
-  margin-bottom: 20px;
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .thumbnail {

@@ -55,6 +55,7 @@ $(document).ready(function() {
         text: {previous: "", next: ""},
         showCaption:false
     });
+    $('input, textarea').placeholder();
     if (window.location.hash) {
         $('#search_input').val(window.location.hash.substring(1)).trigger('keyup');
     }

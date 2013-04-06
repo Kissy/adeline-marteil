@@ -4,11 +4,12 @@ body {
 .content-body {
     margin: 5px;
 }
-.logo  .span12 {
+.logo a {
+    display: block;
     margin-top: 34px;
     margin-bottom: 24px;
 }
-.menu .span12 {
+.menu .menu-container {
     height: 52px;
     margin-bottom: 28px;
     border: 1px solid #979798;
@@ -58,20 +59,23 @@ body {
 .menu .dropdown-menu li:first-child a {
     border-top: none;
 }
-
 .menu input {
-    height: 12px;
+    height: 16px;
+    line-height: 16px;
     font-style: italic;
     width: 145px;
     color: #505050;
     background-color: #eaeae0;
     border: 1px solid #a7a9ac;
-    margin: 15px 0;
+    margin: 13px 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
     position: absolute;
     right: 0;
+}
+.homeLinks .thumbnails {
+    *margin-bottom: 20px;
 }
 .homeLinks img {
     width: 100%;
@@ -79,6 +83,9 @@ body {
 .homeLinks .caption {
     text-align: center;
     text-transform: uppercase;
+}
+.categories {
+    *margin-bottom: 20px;
 }
 .categories .caption {
     text-align: center;
@@ -90,9 +97,6 @@ body {
 }
 .categories .thumbnail > img {
     height: 210px;
-}
-.thumbnails {
-    margin-bottom: 0;
 }
 .title {
     margin-bottom: 20px;

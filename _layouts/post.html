@@ -23,8 +23,9 @@ layout: default
         {% if page.animations %}
             {% for animation in page.animations %}
                 <div class="well">
-                    <object data="/img{{page.id | downcase}}/{{animation}}" width="100%" height="400" type="application/x-shockwave-flash">
-                        <embed src="/img{{page.id | downcase}}/{{animation}}" type="application/x-shockwave-flash" />
+                    <object type="application/x-shockwave-flash" data="/img{{page.id | downcase}}/{{animation}}" width="660" height="400">
+                        <param name=movie value="/img{{page.id | downcase}}/{{animation}}">
+                        <embed type="application/x-shockwave-flash" src="/img{{page.id | downcase}}/{{animation}}" width="660" height="400" />
                     </object>
                 </div>
             {% endfor %}

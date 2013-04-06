@@ -16,6 +16,7 @@
         <script src="/js/jquery.min.js"></script>
         <script src="/js/jquery.pikachoose.min.js"></script>
         <script src="/js/jquery.quicksand.js"></script>
+        <script src="/js/jquery.placeholder.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/scripts.js"></script>
         
@@ -45,25 +46,27 @@
             </div>
             <div class="row menu">
                 <div class="span12">
-                    <ul class="centered-menu">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="http://blog.adeline-marteil.fr/" target="_blank">Journal</a></li>
-                        <li class="dropdown-menu-button">
-                            <a href="/work/">Work</a>
-                            <ul class="dropdown-menu">
-                                {% capture get_items %}{% for category in site.categories %}{{category | first | replace: ' ', '_'}} {% endfor %}{% endcapture %}
-                                {% capture num_words %}{{get_items | split:' ' |  sort | join:' ' | number_of_words}}{% endcapture %}
-                                {% for item in (1..num_words) %}
-                                    {% capture category %}{{get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' | split:' '  | last | replace: '_', ' '}}{% endcapture %}
-                                    <li><a href="/work/{{category}}/">{{category | replace:'-',' '}}</a></li>
-                                {% endfor %}
-                            </ul>
-                        </li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="http://www.hamsterdance.org/hamsterdance/" target="_blank">Don't click</a></li>
-                    </ul>
-                    <input type="text" id="search_input" placeholder="Search..." />
+                    <div class="menu-container">
+                        <ul class="centered-menu">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="http://blog.adeline-marteil.fr/" target="_blank">Journal</a></li>
+                            <li class="dropdown-menu-button">
+                                <a href="/work/">Work</a>
+                                <ul class="dropdown-menu">
+                                    {% capture get_items %}{% for category in site.categories %}{{category | first | replace: ' ', '_'}} {% endfor %}{% endcapture %}
+                                    {% capture num_words %}{{get_items | split:' ' |  sort | join:' ' | number_of_words}}{% endcapture %}
+                                    {% for item in (1..num_words) %}
+                                        {% capture category %}{{get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' | split:' '  | last | replace: '_', ' '}}{% endcapture %}
+                                        <li><a href="/work/{{category}}/">{{category | replace:'-',' '}}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="http://www.hamsterdance.org/hamsterdance/" target="_blank">Don't click</a></li>
+                        </ul>
+                        <input type="text" id="search_input" placeholder="Search..." />
+                    </div>
                 </div>
             </div>
             {{ content }}
