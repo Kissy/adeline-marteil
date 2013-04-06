@@ -2,5 +2,5 @@
 layout: post
 category: photography
 thumbnail: thumbnail.jpg
-images: [A-Christmas-in-Paris1.jpg, A-Christmas-in-Paris2.jpg, A-Christmas-in-Paris3.jpg, A-Christmas-in-Paris4.jpg]
+images: [A-Christmas-in-Paris1.png, A-Christmas-in-Paris2.png, A-Christmas-in-Paris3.jpg, A-Christmas-in-Paris4.jpg]
 ---
