@@ -3,8 +3,8 @@ layout: default
 ---
 <div class="row">
     <div class="span12">
-        <h1>{{page.title | replace:'-',' '}}</h1>
-        <h4  class="title" id="no_results">No results found</h4>
+        <h1 class="tk-title-font">{{page.title | replace:'-',' '}}</h1>
+        <h4  class="title tk-body-font" id="no_results">No results found</h4>
         <div class="categories">
             {% if page.title == 'Work' %}
                 {% assign posts = site.posts %}
@@ -16,7 +16,7 @@ layout: default
                 {% assign category_name = page.title | downcase %}
                 {% assign posts = site.categories[category_name]  %}
             {% endif %}
-            <ul class="thumbnails" id="{{list_id}}">
+            <ul class="thumbnails tk-title-font" id="{{list_id}}">
                 {% for post in posts limit:posts_limit %}
                     {% if page.title != 'Work' or post.duplicate != true %}
                         <li class="span3" data-id="{{post.title | downcase}}">
