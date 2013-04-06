@@ -27,6 +27,9 @@
     position:relative;
     padding: 16px 16px;
 }
+.menu .centered-menu li.current > a {
+    color: #12b6b5;
+}
 .menu .centered-menu a {
     font-size: 16px;
     text-transform: uppercase;

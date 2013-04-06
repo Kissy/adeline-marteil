@@ -48,21 +48,42 @@
                 <div class="span12">
                     <div class="menu-container tk-title-font">
                         <ul class="centered-menu">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
+                            {% if page.url == '/index.html' %}
+                                <li class="current"><a href="javascript:void(0);">Home</a></li>
+                            {% else %}
+                                <li><a href="/">Home</a></li>
+                            {% endif %}
+                            {% if page.url == '/about/index.html' %}
+                                <li class="current"><a href="javascript:void(0);">About</a></li>
+                            {% else %}
+                                <li><a href="/about">About</a></li>
+                            {% endif %}
                             <li><a href="http://blog.adeline-marteil.fr/" target="_blank">Journal</a></li>
-                            <li class="dropdown-menu-button">
-                                <a href="/work/">Work</a>
+                            <li class="dropdown-menu-button {% if page.url == '/work/index.html' %}current{% endif %}">
+                                {% if page.url == '/work/index.html' %}
+                                    <a href="javascript:void(0);">Work</a>
+                                {% else %}
+                                    <a href="/work/">Work</a>
+                                {% endif %}
                                 <ul class="dropdown-menu">
                                     {% capture get_items %}{% for category in site.categories %}{{category | first | replace: ' ', '_'}} {% endfor %}{% endcapture %}
                                     {% capture num_words %}{{get_items | split:' ' |  sort | join:' ' | number_of_words}}{% endcapture %}
                                     {% for item in (1..num_words) %}
                                         {% capture category %}{{get_items | split:' ' |  sort | join:' ' | truncatewords:item | remove:'...' | split:' '  | last | replace: '_', ' '}}{% endcapture %}
-                                        <li><a href="/work/{{category}}/">{{category | replace:'-',' '}}</a></li>
+                                        {% capture currentPageUrl %}/work/{{category}}/index.html{% endcapture %}
+                                        {% if page.url == currentPageUrl %}
+                                            <li class="current"><a href="javascript:void(0);">{{category | replace:'-',' '}}</a></li>
+                                        {% else %}
+                                            <li><a href="/work/{{category}}/">{{category | replace:'-',' '}}</a></li>
+                                        {% endif %}
                                     {% endfor %}
                                 </ul>
                             </li>
-                            <li><a href="/contact">Contact</a></li>
+                            {% if page.url == '/contact/index.html' %}
+                                <li class="current"><a href="javascript:void(0);">Contact</a></li>
+                            {% else %}
+                                <li><a href="/contact">Contact</a></li>
+                            {% endif %}
                             <li><a href="http://www.hamsterdance.org/hamsterdance/" target="_blank">Don't click</a></li>
                         </ul>
                         <input type="text" id="search_input" class="tk-body-font" placeholder="Search..." />
