@@ -1,4 +1,1 @@
-$ dig www.adeline-marteil.fr +nostats +nocomments +nocmd
-# ;www.adeline-marteil.fr.                 IN      A
-# www.adeline-marteil.fr.          3592    IN      CNAME   amarteil.github.io.
-# amarteil.github.io.      43192   IN      A       204.232.175.78
+adeline-marteil.fr
