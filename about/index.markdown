@@ -8,4 +8,4 @@ Her interest in graphic arts is not new and it has always been an important part
 
 Indeed, Adeline does not see graphic design as an end in itself, but rather as a mean to help and improve people’s lives, as well as serve the society.
 
-Particularly interested in the use of different mediums, she likes to mix photography, drawing, collage and typography in her work. Recently, she has also started experimenting with projection through the magic lantern, in order to take her practice further.
+Particularly interested in the use of different mediums, she likes to mix photography, drawing, collage and typography in her work. Recently, she has also started experimenting with interactiv desing and projection through the magic lantern, in order to take her practice further.
