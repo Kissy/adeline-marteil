@@ -3,4 +3,4 @@ layout: post
 category: exhibition
 thumbnail: thumbnail.jpg
 ---
-A venir en juin...
+The Degree Show of the MA Graphic Arts (UWE), will take place at Bower Ashton campus on the 8th June 2013.
