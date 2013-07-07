@@ -1,6 +1,6 @@
 ---
 layout: post
-category: exhibition
+category : exhibition
 thumbnail: thumbnail.jpg
 images: [degree1.jpg, degree2.jpg, degree3.jpg, degree4.jpg]
 video: 69068356
