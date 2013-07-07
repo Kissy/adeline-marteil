@@ -3,7 +3,7 @@ layout: post
 category: exhibition
 thumbnail: thumbnail.jpg
 images: [degree1.jpg, degree2.jpg, degree3.jpg, degree4.jpg]
-video:69068356
+video: 69068356
 ---
 The UWE grad show is a great chance to see the freshly delivered new designers from different disciplines ranging from Graphic Arts (us!) to Fashion and new medias.
 The preview evening is 6-9pm Friday 7th June at the Bower Ashton campus, the occasion to meet the new graduates along wine and cupcakes.
