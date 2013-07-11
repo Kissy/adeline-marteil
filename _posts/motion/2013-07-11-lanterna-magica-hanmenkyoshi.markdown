@@ -1,9 +1,9 @@
 ---
 layout: post
 category : motion
-title: Lanterna Magica - Japan
+title: Lanterna Magica - Hanmenkyoshi
 thumbnail: thumbnail.jpg
-video: 64885090
+images: [japan1.jpg, japan2.jpg, japan3.jpg, japan4.jpg, japan5.jpg, japan6.jpg, japan7.jpg, japan8.jpg]
 video: 65215224
 ---
 My master project has been developed around the magic lantern, the first slide projector, and handmade animations. 
