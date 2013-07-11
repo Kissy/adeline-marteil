@@ -1,7 +1,7 @@
 ---
 layout: post
 category : motion
-title: Lanterna M. - Recollection from Japan
+title: LM. - Recollection from Japan
 thumbnail: thumbnail.jpg
 images: [japan9.jpg, japan10.jpg, japan11.jpg, japan12.jpg, japan13.jpg, japan14.jpg, japan15.jpg, japan16.jpg]
 video: 64885090
