@@ -6,7 +6,8 @@ thumbnail: thumbnail.jpg
 video: 38232537
 images: [postersPOD1.jpg, postersPOD0.jpg, postersPOD02.jpg]
 ---
-Entry to the D&AD Competition 2012 about the organization Peace One Day. Brief sponsored by Interbrand.
+Entry to the D&AD Competition 2012
+Peace One Day - Brief sponsored by Interbrand.
 
 Don’t let Peace Day be ignored.
 
@@ -16,5 +17,7 @@ We hope that this will be the largest reduction in global violence in recorded h
 of individuals in the name of peace.”
 
 Concept declinable in print (posters, flyers), media (web) and textile support.
+
 [PeaceOneDay.org](http://peaceoneday.org)
+
 [DandAD.org](http://dandad.org)
