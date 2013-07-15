@@ -17,6 +17,7 @@ We hope that this will be the largest reduction in global violence in recorded h
 of individuals in the name of peace.”
 
 Concept declinable in print (posters, flyers), media (web) and textile support.
+
 [PeaceOneDay.org](http://peaceoneday.org)
 
 [DandAD.org](http://dandad.org)
