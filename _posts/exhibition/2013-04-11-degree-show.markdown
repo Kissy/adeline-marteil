@@ -10,8 +10,7 @@ The UWE grad show is a great chance to see the freshly delivered new designers f
 The preview evening is 6-9pm Friday 7th June at the Bower Ashton campus, the occasion to meet the new graduates along wine and cupcakes.
 
 Read more about the MA Graphic Arts class of 2013 at our own website
-www.uwetopia.com
-
+[uwetopia.com](http://www.uwetopia.com)
 
 
 
