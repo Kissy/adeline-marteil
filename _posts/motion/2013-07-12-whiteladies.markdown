@@ -12,6 +12,5 @@ A short animation part of the Kickstarter successful campaign to support the ren
 
 
 [whiteladies-picturehouse.com](http://www.whiteladies-picturehouse.com)
-
 [kickstarter.com](http://www.kickstarter.com)
 
