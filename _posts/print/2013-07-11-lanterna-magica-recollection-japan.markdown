@@ -1,6 +1,6 @@
 ---
 layout: post
-category: motion
+category: print
 thumbnail: thumbnail.jpg
 external: /work/motion/lanterna-magica-recollection-japan/
 duplicate: true
